@@ -1,4 +1,4 @@
-import { List, ItemAction } from '@List'
+import { List, EntityAction } from '@List'
 import LinkIcon from '@mui/icons-material/Link';
 
 const headers = <>
@@ -9,8 +9,8 @@ const row = (item) => <>
     <td>{item.title}</td>
 </>
 
-const itemActions = (item) => <>
-    <ItemAction
+const entityActions = (item) => <>
+    <EntityAction
         title='Manage links'
         icon={LinkIcon}
         goTo={`/links?linkGroupId=${item.id}`}
@@ -23,7 +23,7 @@ const LinkGroups = () => {
         entityType='LinkGroup'
         headers={headers}
         row={row}
-        itemActions={itemActions}
+        entityActions={entityActions}
     />
 }
 
