@@ -1,4 +1,4 @@
-import { Form, Text } from '@Form'
+import { DialogForm, Text } from '@Form'
 
 const inputs = <>
     <Text
@@ -10,7 +10,7 @@ const inputs = <>
 
 const UpsertLinkGroup = (props) => {
     const { large } = props || { large: undefined }
-    return <Form
+    return <DialogForm
         entityType='LinkGroup'
         inputs={inputs}
         large={large}

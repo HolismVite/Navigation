@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { Form, Text, Link, Check } from '@Form'
+import { DialogForm, Text, Link, Check } from '@Form'
 
 const UpsertMenuItem = () => {
     // const [isDirectory, setIsDirectory] = useState(false)
 
-    return <Form
+    return <DialogForm
         entityType='MenuItem'
         inputs={<>
             <Text

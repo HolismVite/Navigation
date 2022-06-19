@@ -1,4 +1,4 @@
-import { Form, Text, Link } from '@Form'
+import { DialogForm, Text, Link } from '@Form'
 
 const inputs = <>
     <Text
@@ -14,7 +14,7 @@ const inputs = <>
 </>
 
 const UpsertLink = () => {
-    return <Form
+    return <DialogForm
         entityType='Link'
         inputs={inputs}
     />
