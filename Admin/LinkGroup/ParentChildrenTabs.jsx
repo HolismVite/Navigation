@@ -3,14 +3,14 @@ import UpsertLinkGroup from './Upsert'
 import Links from '../Link/List'
 
 const tabs = <>
-    <Tab
+    {/* <Tab
         title="Group"
         panel={UpsertLinkGroup()}
     />
     <Tab
         title="Links"
         panel={Links()}
-    />
+    /> */}
 </>
 
 const LinkGroupAndLinksTabs = () => {
