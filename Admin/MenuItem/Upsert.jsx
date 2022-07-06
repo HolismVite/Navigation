@@ -1,33 +1,22 @@
-import { useState } from 'react'
-import { DialogForm, Text, Link, Check } from '@Form'
+import { DialogForm, Text, Link } from '@Form'
+
+const inputs = <>
+    <Text
+        column='Title'
+        placeholder='Title'
+        required='Title is required'
+    />
+    <Link
+        column='Url'
+        placeholder='URL'
+    />
+</>
 
 const UpsertMenuItem = () => {
-    // const [isDirectory, setIsDirectory] = useState(false)
 
     return <DialogForm
         entityType='MenuItem'
-        inputs={<>
-            <Text
-                column='Title'
-                placeholder='Title'
-                required='Title is required'
-            />
-            {/* <Check
-                column='IsDirectory'
-                placeholder='Is directory'
-            // change={value => setIsDirectory(value)}
-            /> */}
-            {/* {
-                !isDirectory && <Link
-                    column='Url'
-                    placeholder='URL'
-                />
-            } */}
-            <Link
-                column='Url'
-                placeholder='URL'
-            />
-        </>}
+        inputs={inputs}
     />
 }
 
