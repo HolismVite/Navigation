@@ -18,13 +18,14 @@ const entityActions = (item) => <>
     />
 </>
 
-const LinkGroups = () => {
+const LinkGroups = ({ isSuperAdmin }) => {
     return <List
         title='Link groups'
         entityType='LinkGroup'
         headers={headers}
         row={row}
-        create={UpsertLinkGroup}
+        create={isSuperAdmin && UpsertLinkGroup}
+        edit={UpsertLinkGroup}
         entityActions={entityActions}
     />
 }
