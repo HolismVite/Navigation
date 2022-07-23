@@ -1,5 +1,6 @@
 import { List, EntityAction } from '@List'
 import LinkIcon from '@mui/icons-material/Link';
+import UpsertLinkGroup from './Upsert';
 
 const headers = <>
     <th>Title</th>
@@ -23,6 +24,7 @@ const LinkGroups = () => {
         entityType='LinkGroup'
         headers={headers}
         row={row}
+        create={UpsertLinkGroup}
         entityActions={entityActions}
     />
 }
